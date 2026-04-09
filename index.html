@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xavier Vaca Alvarez | Asesoría Premium en Seguros</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #1b4332;
+            /* Verde bosque profundo */
+            --accent-green: #2d6a4f;
+            /* Verde corporativo */
+            --light-bg: #f8faf8;
+            /* Fondo blanco suave */
+            --white: #ffffff;
+            --text-dark: #1a1a1a;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary-green) 0%, #081c15 100%);
+            color: var(--white);
+            padding: 100px 20px;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .premium-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 20px auto 0;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        /* Formulario */
+        .container {
+            max-width: 500px;
+            margin: -80px auto 100px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        h2 {
+            color: var(--primary-green);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--accent-green);
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fafafa;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: var(--accent-green);
+            background: var(--white);
+            box-shadow: 0 0 0 4px rgba(45, 106, 79, 0.1);
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--accent-green);
+            color: var(--white);
+            border: none;
+            padding: 16px;
+            margin-top: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        button:hover {
+            background-color: var(--primary-green);
+            transform: translateY(-2px);
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                margin-top: -50px;
+                width: 85%;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="premium-badge">Exclusividad &amp; Confianza</div>
+        <h1>Xavier Vaca</h1>
+        <p class="subtitle">Asesor&iacute;a integral y premium en la contrataci&oacute;n de seguros. Protegemos lo que m&aacute;s valoras con un est&aacute;ndar de excelencia.</p>
+    </header>
+    <div class="container">
+        <h2>Agendar Consultor&iacute;a</h2><!-- RECUERDA: Cambia TU_CORREO@DOMINIO.COM por tu email real -->
+        <form action="https://formsubmit.co" method="POST">
+            <div class="form-group"><label>Nombre Completo</label> <input type="text" name="Nombre" placeholder="Nombre" required=""></div>
+            <div class="form-group"><label>Apellidos</label> <input type="text" name="Apellido" placeholder="Apellidos" required=""></div>
+            <div class="form-group"><label>Tel&eacute;fono de Contacto</label> <input type="tel" name="Teléfono" placeholder="Número con clave lada" required=""></div>
+            <div class="form-group"><label>Correo Electr&oacute;nico</label> <input type="email" name="Email" placeholder="correo@ejemplo.com" required=""></div>
+            <div class="form-group"><label>Tipo de Protecci&oacute;n Requerida</label> <select name="Producto" required="">&nbsp;<option value="">Selecciona una opci&oacute;n...</option>
+                    <option value="Empresa">🛡️ Empresa </option>
+                    <option value="Vida">👤 Seguro de Vida</option>
+                    <option value="Gastos Médicos">🏥 Gastos M&eacute;dicos Mayores</option>
+                    <option value="Auto">🚗 Seguro de Auto</option>
+                    <option value="Hogar">🏠 Seguro de Hogar</option>&nbsp; &nbsp;
+                </select></div><button type="submit">Solicitar Contacto</button> <input type="hidden" name="_subject" value="NUEVO PROSPECTO: Xavier Vaca Alvarez Web">&nbsp;<input type="hidden" name="_captcha" value="false">
+        </form>
+        <p class="footer-note">Un asesor se comunicar&aacute; con usted en menos de 24 horas h&aacute;biles.</p>
+    </div>
+</body>
+
+</html>
